@@ -372,7 +372,7 @@ elif "Patient Records" in section:
 
     if search_query.strip():
         patients = db.search_patients(search_query.strip())
-        st.caption(f"{len(patients)} result(s) for '{search_query}')
+        st.caption(f"{len(patients)} result(s) for {search_query})
     else:
         patients = db.get_all_patients()
 
